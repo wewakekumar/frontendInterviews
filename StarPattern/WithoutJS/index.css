@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+.star-container {
+    padding: 25px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+label {
+    font-size: 150px;
+    color: white;
+}
+
+input:checked ~label, input:checked label {
+    color: yellow;
+}
+
+label:hover ~label, label:hover {
+    color: yellow;
+}
